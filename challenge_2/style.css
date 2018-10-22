@@ -1,4 +1,33 @@
 .class1{
-    font-family: Trebuchet;
+    font-family: monospace;
     color: rgb(0, 114, 5);
+    background-color: lightgrey;
+}
+.image1{
+    margin-left: auto;
+    margin-right: 250;
+}
+.canada{
+    font-family: sans-serif;
+    color: rgb(255,130,130);
+    
+}
+.italy{
+    font-family: monospace;
+    color: rgb(0,0,255);
+}
+.japan {
+    font-family: 'courier new';
+    color: rgb(255,0,0);
+}
+.ireland{
+    font-family: fantasy;
+    color: rgb(50,200,50);
+}
+.germany {
+    font-family: cursive;
+    color: rgb(255,200,0);
+}
+html{
+    background-color: lightgreen
 }
