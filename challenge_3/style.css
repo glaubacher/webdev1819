@@ -1,0 +1,102 @@
+.scout {
+    font-family: monospace;
+    color: rgb(230,230,255);
+}
+.soldier{
+    text-align: center;
+    font-family: monospace;
+    color:rgb(255,255,255);
+    background-color: rgb(0,0,0);
+    width: 273px;
+    /*background-color: rgb(25,62,107);*/
+}
+.pyro {
+    font-family: monospace;
+    color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
+    width: 273px;
+    font-size: large;
+}
+.demo {
+    font-family: monospace;
+    color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
+    width: 358.333333px;
+    font-size: large;
+}
+.heavy {
+    font-family: monospace;
+    color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
+    width: 358.333333px;
+    font-size: medium;
+}
+.engineer {
+    font-family: monospace;
+    color: rgb(255,255,255);
+    background-color: rgb(0,0,0);
+    width: 273px;
+    font-size: medium;
+}
+.spike {
+    text-align: center;
+}
+.jet {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: 500px;
+}
+.faye {
+    text-align: center;
+    background:"images/cs2.png";
+}
+.ed {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px solid rgb(150,200,255);
+    width: 358.33333px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4), 0 6px 20px 0 rgba(255, 255, 255, 0.35);
+}
+.ein {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px solid rgb(150,200,255);
+    width: 273px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.4), 0 6px 20px 0 rgba(255, 255, 255, 0.35);
+}
+div.ein:hover {
+    border: 10px solid rgb(25,62,107);
+    filter: brightness(150%);
+    filter: saturation(200%);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6), 0 6px 20px 0 rgba(255, 255, 255, 0.6);
+}
+div.ed:hover {
+    border: 10px solid rgb(25,62,107);
+    filter: brightness(150%);
+    filter: saturation(200%);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6), 0 6px 20px 0 rgba(255, 255, 255, 0.6);
+}
+.mango {
+    width: 273px;
+    height: 273px;
+    display: block;
+    margin: 0 auto;
+}
+.hungrybox {
+    width: 358.333333px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+
+}
+h3 {
+    font-size: 1.3em;
+}
