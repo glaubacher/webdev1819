@@ -1,0 +1,69 @@
+.orangeh1 {
+    font-family: helvetica;
+    color: orange;
+}
+.notboldstrike {
+    font-family: sans-serif;
+    font: helvetica;
+    font-weight: normal;
+    font-size: medium;
+    text-decoration: line-through
+}
+.ucf {
+    font-family: helvetica;
+}
+.main{
+    font-family: helvetica;
+}
+.feature{
+    color: red;
+}
+.nounder a {
+    text-decoration: none;
+}
+.main {
+    background-color: lightblue;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.4);
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.normalsection {
+    padding-left: 12px;
+    padding-right: 12px;
+    border: dotted 3px rgb(25,150,50);
+    margin-bottom: 20px;
+    font-family: helvetica;
+}
+.noindent {
+    text-indent: -40px;
+}
+.penguin{
+    padding-left: 12px;
+    padding-right: 12px;
+    border: dotted 3px rgb(25,150,50);
+    margin-bottom: 20px;
+    font-family: helvetica;
+    background-image: url(http://goo.gl/e2x4ZK);
+    height: 196px;
+    background-repeat: no-repeat;
+}
+.emphasis {
+    background-color: yellow;
+}
+.pink {
+    background-color: pink;
+}
+.aqua {
+    background-color: aquamarine;
+}
+.lemon {
+    background-color: yellow;
+}
+.grape {
+    background-color: purple;
+}
+.inline {
+    display: inline;
+}
