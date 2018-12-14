@@ -1,0 +1,102 @@
+.title {
+    font-family: monospace;
+    color: #d5d5d5;
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.jumbo {
+    background-color: #01395e !important;
+}
+body, #demo{
+    background-color: #01395e;
+}
+body {
+    background-color: #747474 !important;
+}
+body:hover {
+    background-image: url()
+}
+#heading {
+    margin-bottom: 0 !important;
+}
+.text {
+    font-family: monospace;
+    color: #8ec3af;
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.textstick {
+    font-family: monospace;
+    color: #8ec3af;
+    text-align: right;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.caro {
+    color: white !important;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.caroimage {
+    width: auto;
+    height: 800px;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.stick {
+    background-color: #01395e;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.last {
+    margin-bottom: 50px;
+}
+.textstory {
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.titlestory {
+    font-family: monospace;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    text-align: left;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.stories {
+    background-color: #747474;
+}
+.storyimg {
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
