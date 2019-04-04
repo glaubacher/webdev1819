@@ -1,0 +1,36 @@
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+function drawText() {
+                                        ctx.beginPath();
+                                        ctx.lineWidth=10;
+                                        ctx.beginPath();
+                                        ctx.moveTo(20, 20);
+                                        ctx.lineTo(150,20);
+                                        ctx.moveTo(20,20);
+                                        ctx.bezierCurveTo(100, 150, 150, 100,150,50);
+                                        ctx.lineTo(100,50);
+                                        ctx.moveTo(300,20);
+                                        ctx.lineTo(200,20);
+                                        ctx.lineTo(300,100);
+                                        ctx.lineTo(200,100);
+                                        ctx.moveTo(350,20);
+                                        ctx.lineTo(350,100);
+                                        ctx.lineTo(430,100);
+                                        ctx.stroke();
+}
+
+this.newScale = function() {
+    this.scale += this.scaleChange;
+};
+function update(scaleBy){
+                                        ctx.clearRect(0,0,500,200);
+                                        ctx.scale(1,scaleBy);
+                                        drawText();
+}
+drawText();
+update(4);
+
+</script>
+</canvas>

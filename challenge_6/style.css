@@ -17,8 +17,11 @@ body, #demo{
 body {
     background-color: #747474 !important;
 }
-body:hover {
-    background-image: url()
+secret {
+    display: none;
+}
+span:hover + secret {
+  display: block;
 }
 #heading {
     margin-bottom: 0 !important;
