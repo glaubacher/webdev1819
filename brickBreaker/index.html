@@ -3,34 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>* { padding: 0; margin: 0; } canvas { background: #222; display: block; margin: 0 auto; }</style>
 </head>
 <body>
 
-<canvas id="myCanvas" width="480" height="320"></canvas>
-
+<canvas id="myCanvas" width="950" height="600"></canvas>
+<img src="scan.png" alt="ERROR">
 <script>
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
     var ballRadius = 10;
     var x = canvas.width/2;
     var y = canvas.height-30;
-    var dx = 2;
-    var dy = -2;
+    var dx = Math.floor(Math.random() * 10)+1;
+    var dy = -(Math.floor(Math.random() * 10))-1;
     var paddleHeight = 10;
     var paddleWidth = 75;
     var paddleX = (canvas.width-paddleWidth)/2;
     var rightPressed = false;
     var leftPressed = false;
-    var brickRowCount = 5;
-    var brickColumnCount = 3;
+    var brickRowCount = 8;
+    var brickColumnCount = 6;
     var brickWidth = 75;
     var brickHeight = 20;
-    var brickPadding = 10;
+    var brickPadding = 40;
     var brickOffsetTop = 30;
     var brickOffsetLeft = 30;
     var score = 0;
-    var lives = 3;
+    var lives = 8;
     var bricks = [];
     for(var c=0; c<brickColumnCount; c++) {
         bricks[c] = [];
@@ -44,7 +43,7 @@
 
 var xcrt = 4,
     ycrt = 4,
-    speed = 1,
+    speed = 2,
     isBottom = false;
 
 function draw2() {
@@ -54,10 +53,8 @@ function draw2() {
     ctx.shadowBlur = 18;
     ctx.shadowColor = "#60ff6e";
     ctx.fillRect(xcrt, ycrt, 210, 10);
-	
     if (!isBottom && ycrt < canvas.height - 14) ycrt += speed;
     else if (ycrt === canvas.height - 14) isBottom = true;
-	
     if (isBottom && ycrt > 4) ycrt -= speed;
     else if (ycrt === 4) isBottom = false;
 	
@@ -97,7 +94,7 @@ draw2();
                         b.status = 0;
                         score++;
                         if(score == brickRowCount*brickColumnCount) {
-                            alert("YOU WIN, CONGRATS!");
+                            alert("You won, nice");
                             document.location.reload();
                         }
                     }
@@ -155,7 +152,7 @@ draw2();
         drawLives();
         collisionDetection();
         if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
-            dx = -dx;
+            dx = -dx-Math.floor(Math.random() * 10);
         }
         if(y + dy < ballRadius) {
             dy = -dy;
@@ -167,14 +164,14 @@ draw2();
             else {
                 lives--;
                 if(!lives) {
-                    alert("GAME OVER");
+                    alert("oh dang");
                     document.location.reload();
                 }
                 else {
                     x = canvas.width/2;
                     y = canvas.height-30;
-                    dx = 3;
-                    dy = -3;
+                    dx = 5;
+                    dy = -5;
                     paddleX = (canvas.width-paddleWidth)/2;
                 }
             }
