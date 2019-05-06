@@ -94,7 +94,7 @@ draw2();
                         b.status = 0;
                         score++;
                         if(score == brickRowCount*brickColumnCount) {
-                            alert("You won, nice");
+                            alert("YOU WIN");
                             document.location.reload();
                         }
                     }
@@ -164,7 +164,7 @@ draw2();
             else {
                 lives--;
                 if(!lives) {
-                    alert("oh dang");
+                    alert("YOU LOSE");
                     document.location.reload();
                 }
                 else {
